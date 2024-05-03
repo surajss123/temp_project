@@ -1,0 +1,47 @@
+body{
+  background: lightgray
+}
+.head h1{
+  font-size:30px;
+  color:black;
+  text-align:center;
+  font-family: mv boli;
+  font-size: 50px;
+  font-weight: bold;
+  color: yellowgreen;
+}
+.bck a{
+  font-size:25px;
+  color:green;
+  font-weight:bold;
+  margin-left: 200px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+}
+.table{
+  margin-left: 200px;
+}
+.bck a:hover{
+  transform: scale(1.04);
+  border: none;
+  background: green;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.table tr th,td{
+  background-color: brown;
+  color: white;
+  transition: 0.2s auto;
+  font-size: 20px;
+}
+.table tr th,td{
+  padding: 15px;
+}
+.table tr td:hover{
+  transform: scale(1.04);
+  background-color: yellowgreen;
+  color: white;
+}

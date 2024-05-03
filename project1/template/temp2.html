@@ -1,0 +1,809 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href='{% static "style.css" %}'>
+    <link rel="icon" href="image/lunch.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src='{% static "image/logo.png" %}'>
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallary">Gallary</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Order">Order</a></li>
+                <li><a href="{% url 'home6' %}">Order details</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+            </div>
+
+            <div class="main_image">
+                <img src='{% static "image/main_img.png" %}'>
+            </div>
+
+        </div>
+
+
+
+        <br><br>
+
+        <div class="main_btn">
+            <a href="{% url 'home4' %}">Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src='{% static "image/Food-Plate.png" %}'>
+            </div>
+
+            <div class="about_text">
+                <h1><span>About</span>Us</h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    Launched in 2010, Our technology platform connects customers,
+                    restaurant partners and delivery partners, serving their multiple needs.
+                    Customers use our platform to search and discover restaurants,
+                    read and write customer generated reviews and view and upload photos,
+                    order food delivery, book a table and make payments while dining-out at restaurants.
+                    On the other hand, we provide restaurant partners with industry-specific
+                    marketing tools which enable them to engage and acquire customers to grow their
+                    business while also providing a reliable and efficient last mile delivery service.
+                    We also operate a one-stop procurement solution, Hyperpure, which supplies high
+                    quality ingredients and kitchen products to restaurant partners.
+                    We also provide our delivery partners with transparent and flexible earning opportunities.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="{% url 'home4' %}" class="about_btn">Order Now</a>
+
+    </div>
+
+
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Our<span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/buger.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Buger</h2>
+                    <p>
+                        Fast Food
+                    </p>
+                    <h3>₹150</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/pasta.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pasta</h2>
+                    <p>
+                        Marconi
+                    </p>
+                    <h3>₹100</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/lasagna.webp" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>lasagna</h2>
+                    <p>
+                        Fast Food
+                    </p>
+                    <h3>₹120</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/chocolate_Drink.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Drink</h2>
+                    <p>
+                        Cold Coffee
+                    </p>
+                    <h3>₹40</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/pizza.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pizza</h2>
+                    <p>
+                        Fast Food
+                    </p>
+                    <h3>₹100</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/Hot_dog.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    <p>
+                        Fast Food
+                    </p>
+                    <h3>₹60</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/juse.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Juse</h2>
+                    <p>
+                        Carbonated Drinks
+                    </p>
+                    <h3>₹50</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/biryani.webp" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani</h2>
+                    <p>
+                        Non Veg,
+                    </p>
+                    <h3>₹160</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/chocolate.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Chocolate</h2>
+                    <p>
+                        Sugar items
+                    </p>
+                    <h3>₹50</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/ice_cream.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Ice Cream</h2>
+                    <p>
+                        Cold items
+                    </p>
+                    <h3>₹80</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/Spanchi.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Spanchi</h2>
+                    <p>
+                        Cakes
+                    </p>
+                    <h3>₹20/piece</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src='{% static "image/sandwich.jpg" %}'>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich</h2>
+                    <p>
+                        Cakes
+                    </p>
+                    <h3>₹60</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="{% url 'home4' %}" class="menu_btn">Order Now</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Our<span>Gallary</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src='{% static "image/gallary_1.jpg" %}'>
+
+                <h3>Food</h3>
+
+                <a href="{% url 'home4' %}" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src='{% static "image/gallary_2.jpg" %}'>
+
+                <h3>Food</h3>
+
+                <a href="{% url 'home4' %}" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src='{% static "image/gallary_3.jpg" %}'>
+
+                <h3>Food</h3>
+
+                <a href="{% url 'home4' %}" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src='{% static "image/gallary_4.jpg" %}'>
+
+                <h3>Food</h3>
+
+                <a href="{% url 'home4' %}" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src='{% static "image/gallary_5.jpg" %}'>
+
+                <h3>Food</h3>
+
+                <a href="{% url 'home4' %}" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src='{% static "image/gallary_6.jpg" %}'>
+
+                <h3>Food</h3>
+
+                <a href="{% url 'home4' %}" class="gallary_btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Customer<span>Review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src='{% static "image/review_1.png" %}'>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Soumya</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        The food was excellent and so was the service.
+                        I had the mushroom risotto with scallops which was awesome.
+                        My wife had a burger over greens (gluten-free) which was also very good.
+                        They were very conscientious about gluten allergies. The restaurant has a
+                        vey nice ambiance and a cozy bar.
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src='{% static "image/john.jpg" %}'>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                      I was so impressed with my breakfast this morning!
+                        I tried the Fried Green Tomato Benedict and my boyfriend got the Crab Cakes Benedict.
+                        We both finished our whole plates and were so impressed with the quality of the food
+                        and the short amount of time it took to receive it. Our waitress was sweet and helpful.
+                        I will definitely be back
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src='{% static "image/review_3.png" %}'>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Martina</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                       Breakfast was delicious. Like a good homestyle country savory
+                        breakfast (and Im from the south, thats saying a lot)…
+                        Enjoyed the whole experience and definitely recommend this
+                        place for a place to eat on the cape
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src='{% static "image/xaviour.png" %}'>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Xaviour</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                       I go to breakfast or lunch weekly with a group of older women.
+                        In addition to the really good food, I must say that our waitress
+                        today was so kind and patient, as the group tried to decide what
+                        they wanted and were talking non-stop. 🤪 My husband and I love
+                        dinner there as well.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Order-->
+
+
+    <!--Team-->
+<br><br><br>
+    <div class="team">
+        <br><br><br><br><br><br><br>
+        <h1>Our<span>Team</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src='{% static "image/chef1.png" %}'>
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">5 years above experience in cooking</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src='{% static "image/chef2.png" %}'>
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">International Certified professional chef</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src='{% static "image/chef3.jpg" %}'>
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Experienced in Cooking International Dishes</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src='{% static "image/chef4.jpg" %}'>
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Experienced in Cooking Classic Dishes</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Sri Lanka</p>
+                <p>USA</p>
+                <p>India</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+94 12 3456 789</p>
+                <p>+94 25 5568456</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> WT Master Code</span></p>
+
+    </footer>
+
+
+
+
+</body>
+</html>

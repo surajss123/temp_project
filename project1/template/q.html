@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Page</title>
+    <link rel="stylesheet"  href='{% static "q.css" %}'>
+</head>
+<body>
+<div class="order">
+    <h1>Order <b>Now</b></h1>
+</div>
+<div class="image">
+    <div class="img">
+        <img src='{% static "image/order_image.png" %}'>
+    </div>
+    <div class="form">
+        <form action="{% url 'home44' %}" method="POST">
+              {% csrf_token %}
+              <div class="input">
+                 <p>Name</p>
+                 <input type="text" placeholder="you name" name="name" value="{{ aed.Name }}">
+              </div>
+
+              <div class="input">
+                 <p>Number</p>
+                 <input type="number"  placeholder="you number" name="number" value="{{ aed.Number }}">
+              </div>
+
+              <div class="input">
+                 <p>How_Much</p>
+                 <input type="number" placeholder="how many order" name="much" value="{{ aed.How_Much }}">
+              </div>
+
+              <div class="input">
+                 <p>You_Order</p>
+                 <input type="text"  placeholder="food name" name="order" value="{{ aed.You_Order }}">
+              </div>
+
+              <div class="input">
+                 <p>Address</p>
+                 <input type="text" placeholder="you Address" name="address" value="{{ aed.Address }}">
+              </div>
+              <br><br>
+
+              <button>Order Now</button>
+        </form>
+    </div>
+
+</div>
+<div class="home">
+    <a href="{% url 'home3' %}">Home Page</a>
+</div>
+</body>
+</html>
